@@ -38,7 +38,7 @@
         Select Player Names
     </div>
     <div class="player_insert">
-        <form action="potato.php" method="post">
+        <form action="categories.php" method="post">
             Player 1: <input name="player_1"/><br>
             Player 2: <input name="player_2"/><br>
             Player 3: <input name="player_3"/><br>
