@@ -24,6 +24,20 @@
                 margin: 0 auto;
                 width: 100%
             }
+            a{
+                margin-bottom: 30px;
+                padding: 3px;
+                width: 100%;
+                font-size: 70px;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                display: block;
+                background-color: #000;
+            }
+            a:hover{
+                background-color: #8B8B8B;
+            }
         </style>
     </head>
     <body>
