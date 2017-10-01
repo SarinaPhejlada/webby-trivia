@@ -50,5 +50,14 @@
             <a href = "php.php">Category 3: PHP</a>
             <a href = "plc.php">Category 4: PLC</a>
         </div>
+        <?php
+            session_start();
+            if (isset($_POST['sumbit_players'])){
+                $_SESSION['player_1'] = $_POST['player_1'];
+                $_SESSION['player_2'] = $_POST['player_2'];
+                $_SESSION['player_3'] = $_POST['player_3'];
+                $_SESSION['player_4'] = $_POST['player_4'];
+            }
+        ?>
     </body>
 </html>
