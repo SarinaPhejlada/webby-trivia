@@ -1,0 +1,53 @@
+.questionbox {
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    height: 200px;
+    width: 50%;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.answerbox1 {
+    float:left;
+    margin-left: 450px;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+}
+.answerbox2 {
+    float: right;
+    margin-right: 450px;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+}
+.answerbox3 {
+    clear: right;
+    float: left;
+    margin-top: 20px;
+    margin-left: 450px;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+}
+.answerbox4 {
+    float: right;
+    margin-top: 20px;
+    margin-right: 450px;
+    text-align: center;
+    border: 5px solid black;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    padding-top: 15px;
+}
