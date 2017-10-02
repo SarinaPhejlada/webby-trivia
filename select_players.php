@@ -28,7 +28,6 @@
             left: 25%;
             right: 25%;
             width: 50%;
-            
             bottom: 0;
         }
     </style>
@@ -38,7 +37,7 @@
         Select Player Names
     </div>
     <div class="player_insert">
-        <form action="categories.php" method="post">
+        <form action="player_info.php" method="post">
             Player 1: <input name="player_1"/><br>
             Player 2: <input name="player_2"/><br>
             Player 3: <input name="player_3"/><br>
