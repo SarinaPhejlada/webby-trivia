@@ -2,8 +2,6 @@
 
 session_start();
 
-echo $_SESSION['starter'];
-
 ?>
 
 <html>
@@ -54,6 +52,14 @@ echo $_SESSION['starter'];
                 text-align: center;
                 padding: 10px;
                 width: 100%;
+            }
+
+            .player_stats {
+                position: fixed;
+                bottom: 10px;
+                background-color: #FFF;
+                text-align: center;
+                padding: 3px;
             }
         </style>
     </head>
