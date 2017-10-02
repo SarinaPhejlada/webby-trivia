@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+echo $_SESSION['starter'];
+
+?>
+
 <html>
     <head>
         <title>Webby Trivia - Categories</title>
@@ -8,7 +16,7 @@
                 font-family: Arial;
             }
             body{
-                background-color: #37E990;
+                background-color: #97EAF4;
                 color: #000;
 
             }
@@ -31,12 +39,21 @@
                 font-size: 70px;
                 text-align: center;
                 text-decoration: none;
-                color: white;
+                color: black;
                 display: block;
-                background-color: #000;
+                background-color: #06C2F4;
             }
             a:hover{
-                background-color: #8B8B8B;
+                background-color: #007996;
+            }
+
+            .player_stats {
+                position: fixed;
+                bottom: 10px;
+                background-color: #06C2F4;
+                text-align: center;
+                padding: 10px;
+                width: 100%;
             }
         </style>
     </head>
@@ -44,20 +61,28 @@
         <div class = "title">
             Select a Category:
         </div>
+        
         <div class = "categories">
-            <a href = "html.php">Category 1: HTML</a>
-            <a href = "css.php">Category 2: CSS</a>
-            <a href = "php.php">Category 3: PHP</a>
-            <a href = "plc.php">Category 4: PLC</a>
+            <a href = "questions_display.php?category=HTML">Category 1: HTML</a>
+            <a href = "questions_display.php?category=CSS">Category 2: CSS</a>
+            <a href = "questions_display.php?category=PHP">Category 3: PHP</a>
+            <a href = "questions_display.php?category=PLC">Category 4: PLC</a>
         </div>
-        <?php
-            session_start();
-            if (isset($_POST['sumbit_players'])){
-                $_SESSION['player_1'] = $_POST['player_1'];
-                $_SESSION['player_2'] = $_POST['player_2'];
-                $_SESSION['player_3'] = $_POST['player_3'];
-                $_SESSION['player_4'] = $_POST['player_4'];
-            }
-        ?>
+        <div class="player_stats">
+            <?php
+                if (isset($_SESSION['player_1'])) {
+                    echo "<b>".$_SESSION['player_1']."</b>: ".$_SESSION['player_1_score']." points\t";
+                }
+                if (isset($_SESSION['player_2'])) {
+                    echo "<b>".$_SESSION['player_2']."</b>: ".$_SESSION['player_2_score']." points\t";
+                }
+                if (isset($_SESSION['player_3'])) {
+                    echo "<b>".$_SESSION['player_3']."</b>: ".$_SESSION['player_3_score']." points\t";
+                }
+                if (isset($_SESSION['player_4'])) {
+                    echo "<b>".$_SESSION['player_4']."</b>: ".$_SESSION['player_4_score']." points\t";
+                }
+            ?>
+        </div>
     </body>
 </html>

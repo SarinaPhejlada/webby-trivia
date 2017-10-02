@@ -1,12 +1,21 @@
+div {
+    border-radius: 10px;
+}
+.answer-box {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
 .questionbox {
     margin: 0 auto;
     text-align: center;
     border: 5px solid black;
     background-color: white;
     height: 200px;
-    width: 50%;
+    width: 75%;
     font-size: 25px;
     margin-bottom: 15px;
+    padding: 10px;
 }
 .answerbox1 {
     float:left;
@@ -50,4 +59,12 @@
     height: 50px;
     width: 150px;
     padding-top: 15px;
+}
+.player_stats {
+    position: fixed;
+    bottom: 10px;
+    background-color: #06C2F4;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
 }
