@@ -18,7 +18,7 @@ function wrongAnswer() {
 }
 
 function winCondition() {
-    for ($i=1; $i<$_SESSION['player_count']; $i++) {
+    for ($i=1; $i<=$_SESSION['player_count']; $i++) {
         if ($_SESSION['player_'.$i.'_score'] >= 30) {
             header('Location: end.php');
         }
