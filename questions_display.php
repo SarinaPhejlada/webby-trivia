@@ -90,7 +90,9 @@
     </head>
     <body>
         <div class="title">Questions</div>
-        <?php echo $_SESSION['starter']; ?>
+        <div class="turn">
+            <?php echo "<h2 style=\"text-align: center\">Turn: ".$_SESSION['player_'.$_SESSION['starter']]."</h2><br>"; ?>
+        </div>  
         <div class="questionbox">
             <?php echo $question->getQuestion(); ?>
         </div>

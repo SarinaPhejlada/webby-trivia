@@ -96,11 +96,10 @@ if (isset($_POST['submit_players'])) {
             }
             // session_destroy();
         ?>
-        <?php
-            echo "<h3>Player ".$_SESSION['starter']." goes first.</h3>";
-        ?>
     </div>
-
+    <?php
+        echo "<h2 style=\"text-align: center; font-size: 40px\">".$_SESSION['player_'.$_SESSION['starter']]." goes first.</h2>";
+    ?>
     
     <a href="categories.php">Start Game</a>
 </body>

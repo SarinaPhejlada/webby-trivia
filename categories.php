@@ -1,7 +1,9 @@
 <?php
 
 session_start();
-// Merged
+
+require_once('answer.php');
+winCondition();
 ?>
 
 <html>
@@ -57,17 +59,21 @@ session_start();
             .player_stats {
                 position: fixed;
                 bottom: 10px;
-                background-color: #FFF;
+                background-color: #06C2F4;
                 text-align: center;
-                padding: 3px;
+                padding: 10px;
+                width: 100%;
             }
+            
         </style>
     </head>
     <body>
         <div class = "title">
             Select a Category:
         </div>
-        
+        <div class="turn">
+            <?php echo "<h2 style=\"text-align: center\">Turn: ".$_SESSION['player_'.$_SESSION['starter']]."</h2><br>"; ?>
+        </div>        
         <div class = "categories">
             <a href = "questions_display.php?category=HTML">Category 1: HTML</a>
             <a href = "questions_display.php?category=CSS">Category 2: CSS</a>
